@@ -7,4 +7,10 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-# Your code goes here ...
+# output total revenue
+puts "Total revenue: #{Store.sum(:annual_revenue)}"
+# output average revenue
+puts "Average revenue: #{Store.average(:annual_revenue)}"
+# output total number of stores generating > 1000000
+puts "Number of stores generating over 1 million: " +
+"#{Store.where(annual_revenue: 1000000..Float::INFINITY).count}"

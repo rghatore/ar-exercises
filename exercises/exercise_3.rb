@@ -11,4 +11,5 @@ puts "----------"
 
 # check by count
 puts "store count: #{Store.count}"
-puts "store 1 name: #{@store1.name}"
+# puts "store 2 name: #{@store2.name}" # works with instance variables
+# puts "store 2 name: #{store2.name}" # doesn't work with local variables
